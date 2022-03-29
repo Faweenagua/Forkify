@@ -34,7 +34,7 @@ export default class View {
                 <use href="${icons}#icon-alert-triangle"></use>
               </svg>
             </div>
-            <p>${message}</p>
+            <p>${message} </p>
         </div>
       `;
 

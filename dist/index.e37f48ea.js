@@ -563,16 +563,21 @@ const controlSearchResults = async function() {
         await _modelJs.loadSearchResults(query);
         //console.log(model.state.search.results);
         //resultsView.render(model.state.search.results);
-        _resultsViewJsDefault.default.render(_modelJs.getSearchResultsPage(6));
+        _resultsViewJsDefault.default.render(_modelJs.getSearchResultsPage(1));
         _paginationViewJsDefault.default.render(_modelJs.state.search);
     } catch (err) {
         _resultsViewJsDefault.default.renderError();
     }
 };
+const controlPagination = function(goto) {
+    _resultsViewJsDefault.default.render(_modelJs.getSearchResultsPage(goto));
+    _paginationViewJsDefault.default.render(_modelJs.state.search);
+};
 //controlSearchResults();
 const init = function() {
     _recipeViewJsDefault.default.addHandlerRender(controlRecipes);
     _searchViewJsDefault.default.addHandlerSearch(controlSearchResults);
+    _paginationViewJsDefault.default.addHandlerClick(controlPagination);
 };
 init();
 
@@ -2797,7 +2802,7 @@ class View {
                 <use href="${_iconsSvgDefault.default}#icon-alert-triangle"></use>
               </svg>
             </div>
-            <p>${message}</p>
+            <p>${message} </p>
         </div>
       `;
         this._clear();
@@ -2887,13 +2892,21 @@ var _iconsSvg = require("url:../../img/icons.svg");
 var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
 class PaginationView extends _viewDefault.default {
     _parentElement = document.querySelector('.pagination');
+    addHandlerClick(handler) {
+        this._parentElement.addEventListener('click', function(e) {
+            const btn = e.target.closest('.btn--inline');
+            if (!btn) return;
+            const goToPage = +btn.dataset.goto;
+            handler(goToPage);
+        });
+    }
     _generateMarkup() {
         const currentPage = this._data.page;
         const numberOfPages = Math.ceil(this._data.results.length / this._data.resultsPerPage);
         //console.log(this._data.results.length());
         console.log(numberOfPages);
         if (currentPage === 1 && numberOfPages > 1) return `
-        <button class="btn--inline pagination__btn--next">
+        <button data-goto="${currentPage + 1}" class="btn--inline pagination__btn--next">
             <span>Page ${currentPage + 1}</span>
             <svg class="search__icon">
                 <use href="${_iconsSvgDefault.default}#icon-arrow-right"></use>
@@ -2901,7 +2914,7 @@ class PaginationView extends _viewDefault.default {
         </button>
         `;
         if (currentPage === numberOfPages && numberOfPages > 1) return `
-        <button class="btn--inline pagination__btn--prev">
+        <button data-goto="${currentPage - 1}" class="btn--inline pagination__btn--prev">
           <svg class="search__icon">
             <use href="${_iconsSvgDefault.default}#icon-arrow-left"></use>
           </svg>
@@ -2909,13 +2922,13 @@ class PaginationView extends _viewDefault.default {
         </button>
         `;
         if (currentPage < numberOfPages && currentPage > 1) return `
-        <button class="btn--inline pagination__btn--prev">
+        <button data-goto="${currentPage - 1}" class="btn--inline pagination__btn--prev">
           <svg class="search__icon">
             <use href="${_iconsSvgDefault.default}#icon-arrow-left"></use>
           </svg>
           <span>Page ${currentPage - 1}</span>
         </button>
-        <button class="btn--inline pagination__btn--next">
+        <button data-goto="${currentPage + 1}" class="btn--inline pagination__btn--next">
             <span>Page ${currentPage + 1}</span>
             <svg class="search__icon">
                 <use href="${_iconsSvgDefault.default}#icon-arrow-right"></use>
