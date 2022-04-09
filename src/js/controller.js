@@ -74,7 +74,7 @@ const controlServings = function (servings) {
   model.updateServings(servings);
 
   //Rendering recipe
-  recipeView.render(model.state.recipe);
+  recipeView.update(model.state.recipe);
 };
 
 //controlSearchResults();
