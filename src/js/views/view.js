@@ -21,11 +21,11 @@ export default class View {
     const newDom = document.createRange().createContextualFragment(newMarkup);
     const newElements = Array.from(newDom.querySelectorAll('*'));
     const curElements = Array.from(this._parentElement.querySelectorAll('*'));
-    console.log(curElements);
+    //console.log(curElements);
 
     newElements.forEach((newEl, i) => {
       const curEl = curElements[i];
-      console.log(curEl, newEl.isEqualNode(curEl));
+      //console.log(curEl, newEl.isEqualNode(curEl));
 
       if (
         !newEl.isEqualNode(curEl) &&
