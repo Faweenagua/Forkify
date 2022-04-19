@@ -87,3 +87,13 @@ export const addBookmark = function (recipe) {
 
   if (recipe.id === state.recipe.id) state.recipe.bookmarked = true;
 };
+
+export const deleteBookmark = function (id) {
+  //find index
+  const index = state.bookmarks.findIndex(el => el.id === id);
+  // add bookmark
+  state.bookmarks.splice(index, 1);
+  console.log(id);
+  // mark current recipe as not bookmarked
+  if (id === state.recipe.id) state.recipe.bookmarked = false;
+};
