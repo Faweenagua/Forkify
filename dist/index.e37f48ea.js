@@ -1753,7 +1753,6 @@ const deleteBookmark = function(id) {
     );
     // add bookmark
     state.bookmarks.splice(index, 1);
-    console.log(id);
     // mark current recipe as not bookmarked
     if (id === state.recipe.id) state.recipe.bookmarked = false;
 };
