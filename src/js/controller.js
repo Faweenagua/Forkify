@@ -104,7 +104,12 @@ const controlBookmarks = function () {
 
 const controlAddRecipe = function (newRecipe) {
   console.log(newRecipe);
-  model.uploadRecipe(newRecipe);
+  try {
+    model.uploadRecipe(newRecipe);
+  } catch (error) {
+    console.log(error);
+    addRecipeView.renderError(error.message);
+  }
 };
 
 const init = function () {
