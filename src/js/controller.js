@@ -5,6 +5,7 @@ import resultsView from './views/resultsView.js';
 import paginationView from './views/paginationView.js';
 import bookmarksView from './views/bookmarksView.js';
 import AddRecipeView from './views/addRecipeView';
+import { MODAL_CLOSE_SEC } from './config.js';
 
 //import icons
 
@@ -105,7 +106,16 @@ const controlBookmarks = function () {
 const controlAddRecipe = async function (newRecipe) {
   console.log(newRecipe);
   try {
+    addRecipeView.renderSpinner();
     await model.uploadRecipe(newRecipe);
+
+    recipeView.render(model.state.recipe);
+
+    addRecipeView.renderSuccess();
+
+    setTimeout(function () {
+      addRecipeView.toggleWindow();
+    }, MODAL_CLOSE_SEC * 1000);
   } catch (error) {
     console.log(error);
     addRecipeView.renderError(error.message);

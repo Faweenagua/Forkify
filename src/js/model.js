@@ -1,6 +1,7 @@
 import { async } from 'regenerator-runtime';
-import { API_URL, RES_PER_PAGE } from './config.js';
+import { API_URL, RES_PER_PAGE, API_KEY } from './config.js';
 import { getJSON } from './helpers.js';
+import { sendJSON } from './helpers.js';
 
 export const state = {
   recipe: {},
@@ -13,24 +14,27 @@ export const state = {
   bookmarks: [],
 };
 
+const createRecipeObject = function (data) {
+  const { recipe } = data.data;
+
+  return {
+    id: recipe.id,
+    title: recipe.title,
+    publisher: recipe.publisher,
+    sourceUrl: recipe.source_url,
+    image: recipe.image_url,
+    servings: recipe.servings,
+    cookingTime: recipe.cooking_time,
+    ingredients: recipe.ingredients,
+    ...(recipe.key && { key: recipe.key }),
+  };
+};
+
 export const loadRecipe = async function (id) {
   try {
     //console.log(res, data);
 
     const data = await getJSON(`${API_URL}${id}`);
-
-    const { recipe } = data.data;
-
-    state.recipe = {
-      id: recipe.id,
-      title: recipe.title,
-      publisher: recipe.publisher,
-      sourceUrl: recipe.source_url,
-      image: recipe.image_url,
-      servings: recipe.servings,
-      cookingTime: recipe.cooking_time,
-      ingredients: recipe.ingredients,
-    };
 
     if (state.bookmarks.some(bookmark => bookmark.id === id)) {
       state.recipe.bookmarked = true;
@@ -48,6 +52,7 @@ export const loadSearchResults = async function (query) {
     state.search.query = query;
     const data = await getJSON(`${API_URL}?search=${query}`);
     //console.log(data);
+    state.recipe = createRecipeObject(data);
     state.search.results = data.data.recipes.map(rec => {
       return {
         id: rec.id,
@@ -145,9 +150,13 @@ export const uploadRecipe = async function (newRecipe) {
       image_url: newRecipe.image,
       publisher: newRecipe.publisher,
       cooking_time: +newRecipe.cookingTime,
-      servings: newServings.servings,
+      servings: newRecipe.servings,
       ingredients,
     };
+
+    const data = await sendJSON(`${API_URL}?key=${API_KEY}`, recipe);
+    console.log(data);
+    state.recipe = createRecipeObject(data);
   } catch (error) {
     throw error;
   }
