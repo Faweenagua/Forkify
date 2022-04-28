@@ -606,6 +606,8 @@ const controlAddRecipe = async function(newRecipe) {
         await _modelJs.uploadRecipe(newRecipe);
         _recipeViewJsDefault.default.render(_modelJs.state.recipe);
         _addRecipeViewDefault.default.renderSuccess();
+        _bookmarksViewJsDefault.default.render(_modelJs.state.bookmarks);
+        window.history.pushState(null, '');
         setTimeout(function() {
             _addRecipeViewDefault.default.toggleWindow();
         }, _configJs.MODAL_CLOSE_SEC * 1000);
