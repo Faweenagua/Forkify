@@ -45,9 +45,10 @@ const controlRecipes = async function () {
     // Loading recipe
 
     await model.loadRecipe(id);
+    console.log(id);
 
     //Rendering recipe
-    recipeView.render(model.state.recipe);
+    recipeView.render(model.state.recipes);
 
     //console.log(recipe);
   } catch (error) {
@@ -115,7 +116,9 @@ const controlAddRecipe = async function (newRecipe) {
 
     bookmarksView.render(model.state.bookmarks);
 
-    window.history.pushState(null, '');
+    window.history.pushState(null, '', `${model.state.recipe.id}`);
+
+    //window.history.back();
 
     setTimeout(function () {
       addRecipeView.toggleWindow();
