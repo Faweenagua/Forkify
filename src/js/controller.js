@@ -113,6 +113,8 @@ const controlAddRecipe = async function (newRecipe) {
 
     addRecipeView.renderSuccess();
 
+    model.addBookmark(model.state.recipe);
+
     bookmarksView.render(model.state.bookmarks);
 
     window.history.pushState(null, '', `${model.state.recipe.id}`);

@@ -607,6 +607,7 @@ const controlAddRecipe = async function(newRecipe) {
         await _modelJs.uploadRecipe(newRecipe);
         _recipeViewJsDefault.default.render(_modelJs.state.recipe);
         _addRecipeViewDefault.default.renderSuccess();
+        _modelJs.addBookmark(_modelJs.state.recipe);
         _bookmarksViewJsDefault.default.render(_modelJs.state.bookmarks);
         window.history.pushState(null, '', `${_modelJs.state.recipe.id}`);
         //window.history.back();
