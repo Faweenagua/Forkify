@@ -43,12 +43,11 @@ const controlRecipes = async function () {
     recipeView.renderSpinner();
 
     // Loading recipe
-
+    //console.log(id);
     await model.loadRecipe(id);
-    console.log(id);
 
     //Rendering recipe
-    recipeView.render(model.state.recipes);
+    recipeView.render(model.state.recipe);
 
     //console.log(recipe);
   } catch (error) {
