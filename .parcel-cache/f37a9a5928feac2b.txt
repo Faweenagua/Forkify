@@ -55,7 +55,7 @@
 137C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest.c132897342314839996 0
 111C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\path-type\package.json132897342302990819 0
 128C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\stable\symbol\async-iterator.js132926836323096082 0
-80C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist132961792444490904 1
+80C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist132961800097993416 1
 114C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\utility-types\SECURITY.md132897342309041661 0
 136C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\features\dom-exception\to-string-tag.js132926836340000860 0
 125C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\features\typed-array\sort.js132926836338125878 0
@@ -282,7 +282,7 @@
 134C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\lmdb\prebuilds\linux-x64\node.abi72.musl.node132897342318555985 0
 123C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\cosmiconfig\dist\readFile.d.ts.map132897342311644471 0
 117C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\actual\math\index.js132926836332191744 0
-105C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\src\js\views\bookmarksView.js132949711679656333 0
+105C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\src\js\views\bookmarksView.js132961799379759425 0
 116C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\css-what\lib\parse.d.ts.map132897342307462247 0
 114C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\util-deprecate\History.md132897342306851488 0
 112C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\stable\weak-set132926836333079382 1
@@ -854,7 +854,7 @@
 112C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\terser\bin\package.json132897342314436999 0
 111C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\postcss-ordered-values132897342309979716 1
 122C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\features\array\entries.js132926836325629300 0
-99C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\index.b3cf19c6.css132961792444411122 0
+99C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\index.b3cf19c6.css132961800097933534 0
 115C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\yaml\browser\types\omap.js132897342309111253 0
 134C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\postcss-normalize-display-values\src\index.js132897342304376668 0
 129C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\postcss-merge-longhand\src\lib\remove.js132897342311016155 0
@@ -1088,6 +1088,7 @@
 117C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\@parcel\events\src\errors.js132897342395815636 0
 122C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\actual\symbol\iterator.js132926836333976977 0
 113C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\yaml\dist\test-events.js132897342313220254 0
+98C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\index.3e662cbf.js132961800097944620 0
 116C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\es\object\assign.js132926836322956454 0
 106C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\yaml\dist\util.js132897342313762525 0
 133C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\terser\node_modules\source-map\source-map.js132897342307276156 0
@@ -2319,6 +2320,7 @@
 123C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\entities\lib\decode_codepoint.d.ts132897342310678451 0
 106C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\cssnano-utils\src132897342306200866 1
 134C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\postcss-normalize-repeat-style\src\lib\map.js132897342305231642 0
+102C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\index.3e662cbf.js.map132961800097983397 0
 120C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\postcss-normalize-positions\src132897342304184421 1
 117C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\@parcel\workers\lib\Trace.js132897342324988777 0
 133C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\postcss-normalize-display-values\LICENSE-MIT132897342303167135 0
@@ -3648,7 +3650,6 @@
 108C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\css-tree\lib\common132897342316012784 1
 126C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\modules\esnext.weak-set.of.js132926836329040181 0
 111C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\css-tree\lib\generator132897342315873169 1
-98C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\index.301fa833.js132961792444421087 0
 108C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\css-tree\lib\parser132897342315835457 1
 119C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\@parcel\graph\test\integration132897342312272794 1
 108C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\css-tree\lib\walker132897342314956316 1
@@ -4824,7 +4825,7 @@
 119C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\@parcel\watcher\src\DirTree.hh132897342310718122 0
 117C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\internals\iterate.js132926836333897184 0
 131C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\internals\iterator-create-proxy.js132926836333927108 0
-101C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\favicon.76dd299c.png132961792340124661 0
+101C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\favicon.76dd299c.png132961800069449874 0
 141C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\caniuse-lite\data\features\scrollintoviewifneeded.js132897342322934276 0
 124C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\internals\iterators-core.js132926836334136542 0
 119C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\internals\iterators.js132926836334136542 0
@@ -5675,7 +5676,6 @@
 123C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\actual\object\is-sealed.js132926836333677778 0
 116C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\actual\object\is.js132926836333757860 0
 118C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\actual\object\keys.js132926836334336010 0
-102C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\index.301fa833.js.map132961792444474598 0
 133C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\@parcel\transformer-html\src\dependencies.js132897342331521326 0
 132C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\actual\object\prevent-extensions.js132926836336240915 0
 123C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\core-js\actual\object\to-string.js132926836340080642 0
@@ -7217,7 +7217,7 @@
 117C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\.bin\node-gyp-build-test.ps1132897343035084300 0
 104C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\.bin\parcel.cmd132897343035084300 0
 98C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\node_modules\.bin\svgo132897343035084300 0
-99C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\icons.9801e6f1.svg132961792444411122 0
-103C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\index.b3cf19c6.css.map132961792444417707 0
-91C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\index.html132961792444417707 0
-98C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\logo.8a7af738.png132961792432899086 0
+99C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\icons.9801e6f1.svg132961800097944620 0
+103C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\index.b3cf19c6.css.map132961800097944620 0
+91C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\index.html132961800097944620 0
+98C:\Users\Clerk\Desktop\complete-javascript-course-master\18-forkify\starter\dist\logo.8a7af738.png132961800092898106 0
