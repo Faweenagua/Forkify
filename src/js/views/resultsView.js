@@ -7,10 +7,10 @@ class ResultsView extends View {
   _errorMessage = 'No recipes found for your search. Please try again. 😥';
   _successMessage = '';
 
-  _generateMarkup() {
+  /* _generateMarkup() {
     //console.log(this._data);
     return this._data.map(this._generateMarkupPreview).join('');
-  }
+  } */
 
   _generateMarkup() {
     //console.log(this._data);
